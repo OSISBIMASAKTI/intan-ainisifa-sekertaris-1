@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodata Organisasi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="#biodata" onclick="showPage('biodata')">Biodata</a></li>
+        <li><a href="#kontak" onclick="showPage('kontak')">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <!-- Biodata Page -->
+    <div id="biodata" class="page active">
+      <div class="container">
+        <div class="profile">
+          <img
+            src="1. Intan Ainisifa Cahyani_sekretaris 1.jpg"
+            alt="Foto Profil"
+          />
+          <h1>Intan Ainisifa Cahyani</h1>
+          <p>Sekertaris 1</p>
+        </div>
+
+        <div class="biodata-table">
+          <!-- <table>
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td>Sandy Ardiansyah</td>
+                    </tr>
+                </table> -->
+          <br />
+
+          <p>
+            Seorang pelajar yang memiliki semangat tinggi dalam belajar dan terus berupaya mengembangkan potensi diri. Selain fokus pada kegiatan akademik dan mengejar prestasi, saya juga aktif dalam berorganisasi sebagai wadah untuk melatih tanggung jawab, kepemimpinan, serta kemampuan bekerja sama. Memiliki jiwa penasaran yang tinggi akan hal positif, kepemimpinan, serta mempunyai jiwa yang humoris.
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kontak Page -->
+    <div id="kontak" class="page">
+      <div class="container">
+        <h1 style="text-align: center; margin-bottom: 2rem; color: #2d3748">
+          Hubungi Kami
+        </h1>
+
+        <div class="kontak-grid">
+          <div class="kontak-card">
+            <div class="icon">📷</div>
+            <div class="info">
+              <h3>Instagram OSIS</h3>
+              <a
+                href="https://www.instagram.com/osissmkn1_banjar?igsh=MTBsc2llMW93Z2p2bw=="
+                target="_blank"
+                >@osissmkn1_banjar</a
+              >
+            </div>
+          </div>
+
+          <div class="kontak-card">
+            <div class="icon">📸</div>
+            <div class="info">
+              <h3>Instagram Pribadi</h3>
+              <a
+                href="https://www.instagram.com/intansipaa?igsh=MXN1MXJ3dmk0dnZpYQ=="
+                target="_blank"
+                >@intansipaa</a
+              >
+            </div>
+          </div>
+
+          <div class="kontak-card">
+            <div class="icon">💬</div>
+            <div class="info">
+              <h3>WhatsApp</h3>
+              <a href="https://wa.me/62895392815651" target="_blank"
+                >+62895392815651</a
+              >
+            </div>
+          </div>
+
+          <div class="kontak-card">
+            <div class="icon">📍</div>
+            <div class="info">
+              <h3>Alamat</h3>
+              <p>
+                <a
+                  href="https://maps.app.goo.gl/Tkg3kVv5HYvvn3rv9"
+                  target="_blank"
+                  >SMKN 1 Banjar</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showPage(pageId) {
+        // Sembunyikan semua halaman
+        document.querySelectorAll(".page").forEach((page) => {
+          page.classList.remove("active");
+        });
+
+        // Tampilkan halaman yang dipilih
+        document.getElementById(pageId).classList.add("active");
+      }
+    </script>
+  </body>
+</html>
